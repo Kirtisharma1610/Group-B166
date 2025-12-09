@@ -46,4 +46,18 @@ plot(data$Year, data$DeathRate,
 +      border="black")
 
 
+cor.test(data$Year, data$DeathRate, method = "pearson")
+
+	Pearson's product-moment correlation
+
+data:  data$Year and data$DeathRate
+t = -23.375, df = 4705, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.3479219 -0.2967243
+sample estimates:
+      cor 
+-0.322559 
+
+
 

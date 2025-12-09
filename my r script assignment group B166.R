@@ -30,3 +30,20 @@ data <- read.csv("6- infectious-and-parasitic-diseases-death-rate-who-mdb.csv")
 5 Albania  ALB 1993  13.13065
 6 Albania  ALB 1994  11.63521
 
+
+plot(data$Year, data$DeathRate,
++      main = "Scatter Plot of Death Rate vs Year",
++      xlab = "Year",
++      ylab = "Death Rate per 100,000",
++      pch = 19, col = "blue")
+> 
+> abline(lm(DeathRate ~ Year, data = data), col = "red", lwd = 2)
+> 
+> hist(data$DeathRate,
++      main="Histogram of Death Rates",
++      xlab="Death Rate per 100,000",
++      col="lightblue",
++      border="black")
+
+
+

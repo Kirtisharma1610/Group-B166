@@ -17,3 +17,4 @@ df_rq <- data.frame(
   Period = df$Period,
   death_rate = df$death_rate
 )
+
